@@ -1,0 +1,11 @@
+footer {background-color:#eeeeee;padding:50px 0 30px;}
+img {display: block;height: 50px;width: 50px;margin: 0 auto;}
+p {text-align: center;font-family: 'Raleway';color: #424e4e;font-weight:bold;font-size: 13px;text-transform: uppercase;letter-spacing: 2px;padding-top: 20px;}
+footer p i {font-size:8px;}
+button {margin: 15px auto;display:block;padding: 7px 10px 10px;background:#99B4AA}
+button:hover {background:#88A097;}
+button a {font-family:"Raleway";color:#fff;font-size:12px;text-transform:uppercase;font-weight:bold;letter-spacing:2px;}
+.social-icons {width:200px;margin:30px auto 0;display:flex;display:-webkit-flex; justify-content:space-between; -webkit-justify-content:space-between;}
+.social-icons a {color:#88A097;font-size:30px;}
+.social-icons a:hover {color:#99B4AA;}
+.copy {font-size:11px;}

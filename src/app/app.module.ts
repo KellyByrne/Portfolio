@@ -1,18 +1,63 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { Routes, RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { WhoIAmComponent } from './who-i-am/who-i-am.component';
+import { SkillsPageComponent } from './skills-page/skills-page.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { PageErrorComponent } from './page-error/page-error.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { HeaderComponent } from './header/header.component';
+import { FreelanceInfoComponent } from './freelance-info/freelance-info.component';
+import { FooterComponent } from './footer/footer.component';
+import { BlogInfoComponent } from './blog-info/blog-info.component';
+import { AllSkillsSectionComponent } from './all-skills-section/all-skills-section.component';
+import { AllProjectsSectionComponent } from './all-projects-section/all-projects-section.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ProfessionalComponent } from './projects/professional/professional.component';
+import { PersonalComponent } from './projects/personal/personal.component';
+import { IllustratorComponent } from './projects/illustrator/illustrator.component';
+import { ProjectsService } from './projects.service';
 
+const appRoutes : Routes = [
+  {path: '', component: HomePageComponent, pathMatch: 'full' },
+  {path: 'projects/professional', component: ProfessionalComponent},
+  {path: 'projects/personal', component: PersonalComponent},
+  {path: 'projects/illustrator', component: IllustratorComponent},
+  { path: '**', redirectTo: ''}
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WhoIAmComponent,
+    SkillsPageComponent,
+    SkillsComponent,
+    ProjectsPageComponent,
+    ProjectsComponent,
+    PageErrorComponent,
+    HomePageComponent,
+    HeaderComponent,
+    FreelanceInfoComponent,
+    FooterComponent,
+    BlogInfoComponent,
+    AllSkillsSectionComponent,
+    AllProjectsSectionComponent,
+    AboutMeComponent,
+    ProfessionalComponent,
+    PersonalComponent,
+    IllustratorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

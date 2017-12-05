@@ -1,0 +1,14 @@
+.photo-back {background: url('/assets/images/computerdesk.jpg') no-repeat top center fixed;background-size:cover;height:100%;}
+.overlay {background-color:rgba(250,250,250,0.5);height:100%;}
+.overtext {width:50%;margin:0 auto;display:flex;justify-content:center;}
+.overtext h1 {color: #424e4e;font-size:44px;text-align:center;font-family:'Raleway';letter-spacing:4px;}
+
+@media only screen and (min-width: 320px) and (max-width:1023px) {
+  .photo-back {height:75%;}
+  .overtext {width:85%;}
+  .overtext h1 {font-size:34px;}
+}
+
+@media only screen and (min-width: 320px) and (max-width:1023px) and (orientation:landscape) {
+  .photo-back {height:100%;}
+}

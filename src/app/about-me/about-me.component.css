@@ -1,0 +1,31 @@
+.aboutme {text-align:center;font-family:'Raleway';text-transform:uppercase;padding:40px 0 0;letter-spacing:4px;color:#424e4e}
+.half-box {background-color:#eeeeee;height:350px;padding:20px;}
+.aboutme h2 {font-family:"Raleway", sans-serif;color: #424e4e;}
+.aboutme p {color:#99B4AA;font-size:18px;}
+.half-box p {color:#424e4e;font-size:16px;text-transform:none;text-align:left;line-height:1.8;margin-bottom:0px;}
+.s-curve {padding-top: 50px; padding-bottom:50px}
+.img-box {height:350px;}
+.img-box img {height: 350px;width: 100%;}
+.box-in-box {position:relative;}
+.desc-box {background-color:  #abc9bd;height: 260px;margin: 35px 45px 45px;}
+.outline-box {z-index:100;border:2px solid #677171;height: 260px;width:83%;left:75px;top:30px;position:absolute;}
+.text-box {position: absolute;top: 78px;left: 100px;color:#424e4e;}
+.text-box p {font-size: 20px;font-weight: bold;font-family: 'Raleway', sans-serif;letter-spacing: 2px;text-transform: uppercase;color: #424e4e;}
+.text-box i {font-size: 8px;}
+.text-box h4 {font-family: 'Manhattan';font-size: 65px;letter-spacing: 6px;text-transform:none;}
+
+@media only screen and (min-width: 320px) and (max-width:1023px) {
+  .desc-box {margin:0 15px;}
+  .text-box {top:60px;left:37px;}
+  .text-box p {font-size:16px;}
+  .text-box h4 {font-size:50px;}
+  .outline-box {width:88%;left:40px;top:20px;}
+  .box-in-box {margin:25px;padding-bottom: 30px;}
+  .s-curve {padding-top:0px;}
+  .half-box {height:auto;}
+}
+
+@media only screen and (min-width: 320px) and (max-width:1023px) and (orientation:landscape) {
+  .outline-box {width:94%;height:255px;top:25px;}
+  .text-box {left: 65px;}
+}
