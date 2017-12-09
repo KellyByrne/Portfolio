@@ -1,0 +1,16 @@
+.project {background:#fff;}
+.f-container {display: flex;justify-content: center;padding: 40px;}
+.title-contain {border:2px solid #88A097;padding: 10px 10px 3px;text-align:center;display:inline-block;}
+h1 {color:#88A097;font-size:40px;font-family: "Raleway", sans-serif;text-align:center;letter-spacing:1px;}
+p {font-family: "Raleway", sans-serif;color: #424e4e;}
+.row.computer-image img {width: 56%;margin: 0 auto;display: block;padding: 50px 0 60px;}
+.mobile-image img {margin:0 auto;display:block;}
+ul {list-style:none;margin-left:0px;}
+.link-title, .tech {color:#88A097;text-transform:uppercase;padding-left:0px;font-weight:600;letter-spacing:1px;}
+li, .tech-info {padding-left:10px;}
+a {color:#99B4AA;}
+.info-content {padding: 50px 0;}
+.extra {padding:20px 0 50px;}
+.extra h4 {color:#88A097;text-transform:uppercase;text-align:left;padding-bottom:20px;}
+.extra img {border:1px solid #d3d3d3;margin-bottom: 20px;}
+.info-content h4 {font-size: 20px;font-weight: 500;color:#88A097;}

@@ -1,3 +1,36 @@
-<p>
-  illustrator works!
-</p>
+<app-header></app-header>
+<div class="project" *ngFor="let project of projects">
+  <div class="info-content">
+       <div class="row">
+        <div class="columns large-6 medium-6 small-12 mobile-image">
+            <img src="{{project.deskimg1}}" alt="Image">
+        </div>
+        <div class="columns large-6 medium-6 small-12">
+            <div class="f-container">
+               <div class="title-contain"><h1>{{project.title}}</h1></div>
+            </div>
+            <h4>{{project.summaryintro}}</h4>
+            <p>{{project.summary}}</p>
+            <p class="tech">Technologies Used</p>
+            <p class="tech-info">{{project.technologies}}</p>
+            <ul>
+              <li [hidden]= "project.links[0] === 'n/a'" class="link-title">Links</li>
+              <li [hidden]= "project.links[0] === 'n/a'" *ngFor="let link of project.links"><a href="https://{{link}}">{{link}}</a></li>
+            </ul>
+            <p [hidden]= "project.githublink === 'n/a'">Github Link: {{project.githublink}}</p>
+        </div>
+    </div>
+  </div>
+  <div class="extra">
+      <div class="row">
+        <h4>More Project Images</h4>
+        <div class="columns large-6 medium-6 small-12"><img src="{{project.deskimg3}}" alt=""></div>
+        <div class="columns large-6 medium-6 small-12"><img src="{{project.deskimg4}}" alt=""></div>
+      </div>
+      <div class="row">
+         <div class="columns large-12 medium-12 small-12"><img src="{{project.deskimg2}}" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+<app-footer></app-footer>

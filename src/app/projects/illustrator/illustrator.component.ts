@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectsService } from '../../projects.service';
 
 @Component({
   selector: 'app-illustrator',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./illustrator.component.css']
 })
 export class IllustratorComponent implements OnInit {
-
-  constructor() { }
+ projects = [];
+  constructor(private projectsService: ProjectsService) { }
 
   ngOnInit() {
+     this.projectsService.getProjects().subscribe(results => {
+          results.forEach( result => {
+            if (result.category === "illustrator") {
+              this.projects.push(result);
+            }
+          })
+        },
+        (error) => console.log(error)
+      )
+
+     console.log(this.projects);
   }
 
 }

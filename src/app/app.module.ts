@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule} from '@angular/router';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -22,11 +22,13 @@ import { ProfessionalComponent } from './projects/professional/professional.comp
 import { PersonalComponent } from './projects/personal/personal.component';
 import { IllustratorComponent } from './projects/illustrator/illustrator.component';
 import { ProjectsService } from './projects.service';
+import { EachPersonalComponent } from './projects/personal/each-personal/each-personal.component';
 
 const appRoutes : Routes = [
   {path: '', component: HomePageComponent, pathMatch: 'full' },
   {path: 'projects/professional', component: ProfessionalComponent},
   {path: 'projects/personal', component: PersonalComponent},
+  {path: 'projects/personal/:id', component: EachPersonalComponent},
   {path: 'projects/illustrator', component: IllustratorComponent},
   { path: '**', redirectTo: ''}
 ];
@@ -50,7 +52,8 @@ const appRoutes : Routes = [
     AboutMeComponent,
     ProfessionalComponent,
     PersonalComponent,
-    IllustratorComponent
+    IllustratorComponent,
+    EachPersonalComponent
   ],
   imports: [
     BrowserModule,

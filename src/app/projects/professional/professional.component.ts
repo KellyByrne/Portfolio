@@ -7,18 +7,21 @@ import { ProjectsService } from '../../projects.service';
   styleUrls: ['./professional.component.css']
 })
 export class ProfessionalComponent implements OnInit {
-  projects;
+  projects = [];
   constructor(private projectsService: ProjectsService) { }
 
   ngOnInit() {
-     this.projectsService.getProjects()
-      .subscribe(
-        (projects) => {
-          this.projects = projects;
-          console.log(projects);
+     this.projectsService.getProjects().subscribe(results => {
+          results.forEach( result => {
+            if (result.category === "professional") {
+              this.projects.push(result);
+            }
+          })
         },
         (error) => console.log(error)
-      );
+      )
+
+     console.log(this.projects);
   }
 
 }
