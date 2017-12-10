@@ -7,6 +7,7 @@
 
 .desktoponly {display:block;}
 .mobileonly {display:none;}
+li, a, div, h1, h2, h3, h4, h5, p {font-family:'Raleway', sans-serif;}
 
 @media only screen and (min-width: 320px) and (max-width:1023px) {
   .mobileonly {display:block;}

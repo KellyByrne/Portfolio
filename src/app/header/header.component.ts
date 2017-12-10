@@ -33,6 +33,11 @@ export class HeaderComponent implements OnInit {
       }
      });
 
+     $('.menu-item').click(function() {
+        $('.hamburger').removeClass('is-active');
+        $('.mobilenav').hide();
+     });
+
   }
 
 }

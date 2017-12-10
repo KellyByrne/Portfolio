@@ -14,3 +14,14 @@ a {color:#99B4AA;}
 .extra h4 {color:#88A097;text-transform:uppercase;text-align:left;padding-bottom:20px;}
 .extra img {border:1px solid #d3d3d3;margin-bottom: 20px;}
 .info-content h4 {font-size: 20px;font-weight: 500;color:#88A097;}
+
+@media only screen and (min-width: 320px) and (max-width:1023px) {
+  .row.computer-image img {width: 85%;margin-top:50px;}
+  .extra {padding: 20px 10px 50px;}
+  .info-content {padding:0px;}
+}
+
+/*ipad*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:portrait)  {
+  .mobile-image {display:none;}
+}

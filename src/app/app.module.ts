@@ -23,6 +23,8 @@ import { PersonalComponent } from './projects/personal/personal.component';
 import { IllustratorComponent } from './projects/illustrator/illustrator.component';
 import { ProjectsService } from './projects.service';
 import { EachPersonalComponent } from './projects/personal/each-personal/each-personal.component';
+import { PortfolioProgressComponent } from './portfolio-progress/portfolio-progress.component';
+import { BrandingComponent } from './branding/branding.component';
 
 const appRoutes : Routes = [
   {path: '', component: HomePageComponent, pathMatch: 'full' },
@@ -30,6 +32,8 @@ const appRoutes : Routes = [
   {path: 'projects/personal', component: PersonalComponent},
   {path: 'projects/personal/:id', component: EachPersonalComponent},
   {path: 'projects/illustrator', component: IllustratorComponent},
+  {path: 'portfolio-process', component: PortfolioProgressComponent},
+  {path: 'branding', component: BrandingComponent},
   { path: '**', redirectTo: ''}
 ];
 
@@ -53,7 +57,9 @@ const appRoutes : Routes = [
     ProfessionalComponent,
     PersonalComponent,
     IllustratorComponent,
-    EachPersonalComponent
+    EachPersonalComponent,
+    PortfolioProgressComponent,
+    BrandingComponent
   ],
   imports: [
     BrowserModule,

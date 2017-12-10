@@ -1,0 +1,51 @@
+h1,h2,h3,h4,h5,h6 {font-family:"Raleway", sans-serif;color:#10807d;}
+p {color:#424e4e; font-family:"Spectral", serif;text-align:center;}
+h3 {text-align:center;padding-bottom:20px;}
+
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Spectral', serif;*/
+/*darkest aqua: color:#0d6967;*/
+/*little lighter aqua: color:#10807d;*/
+/*dark gray in same color range: #424e4e;*/
+/*even darker gray #474949*/
+/*lighter aqua gray #3c5453*/
+/*color of green icon #9CD5B1*/
+
+/*title section*/
+.title {display: flex; border-bottom:2px solid #eeeeee;justify-content:center;}
+.title h1 {font-family:"Spectral", serif;}
+
+/*logo section*/
+.logo-section {margin-top: 60px;}
+.logo-container {display:flex;justify-content:space-between;flex-wrap:wrap;padding-bottom:30px;border-bottom:2px solid #eeeeee;}
+.logo-1, .logo-2, .logo-3 {flex:1;padding:20px;}
+.logo-1 img {width:80%;display:block;margin: 0 auto;}
+.logo-2 img {width:75%;display:block;margin: 0 auto;}
+.nested-logo {display:flex;justify-content:space-around;}
+
+
+/*color scheme section*/
+.color-scheme {margin-top:60px;padding-bottom:50px;}
+.color-container {display: flex;justify-content:center;}
+.color-div {padding:15px;}
+.color {height:150px;width:150px; border-radius:50%;background-color:#eeeeee;margin-bottom: 10px;}
+.color-1 {background-color:#abc9bd;}
+.color-2 {background-color:#10807d;}
+.color-3 {background-color:#424e4e;}
+.color-4 {background-color:#d7a29e}
+.color-5 {background-color:#e8d8bf}
+
+.font-section{padding-top:60px;padding-bottom:50px;background-color:#eeeeee;}
+.font-container {display:flex;flex-wrap:wrap;}
+.font-1, .font-2 {flex:1;}
+.font-1 {font-family:'Raleway', sans-serif;color:#424e4e;border-right: 1px solid #424e4e;}
+.font-1 h4, .font-1 .lowercase, .font-1 .uppercase, .font-1 .numbers {font-family:'Raleway', sans-serif;}
+.font-2 {font-family:'Spectral', serif;color:#424e4e;}
+.font-2 h4, .font-2 .lowercase, .font-2 .uppercase, .font-2 .numbers {font-family:'Spectral', serif;}
+
+.font-container h4 {text-align:center;}
+.font-container .uppercase {text-transform:uppercase;}
+
+.texture-section {margin-top:60px;padding-bottom:50px;}
+.texture-container {display:flex;justify-content:space-between;flex-wrap:wrap;}
+.texture-1, .texture-2, .texture-3 {flex:1;display:flex;justify-content:center;align-items:center;}

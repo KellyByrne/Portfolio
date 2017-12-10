@@ -1,16 +1,25 @@
 <app-header></app-header>
 <div class="row">
-  <h2>Personal Projects</h2>
-  <p>These are various projects from code school and personal practice and learning. Some of them are incomplete, outdated or deprecated but I like keeping them up and seeing how far I've come and how much I've learned and improved over the last couple of years.</p>
+  <div class="head-info">
+    <div class="large-7 medium-7 small-12">
+      <h2>Personal Projects</h2>
+      <p>These are various projects from code school and personal practice and learning. Some of them are incomplete, outdated or deprecated but I like keeping them up and seeing how far I've come and how much I've learned and improved over the last couple of years.</p>
+    </div>
+  </div>
   <div class="project-container">
     <div class="project" *ngFor="let project of projects">
-      <img src="{{project.display}}" alt="">
+       <a routerLink="/projects/personal/{{project._id}}"><img src="{{project.display}}" alt=""></a>
         <div class="f-container">
            <a routerLink="/projects/personal/{{project._id}}"><div class="title-contain"><h3>{{project.title}}</h3></div></a>
         </div>
         <p class="tech">Technologies Used</p>
         <p class="tech-info">{{project.technologies}}</p>
-        <p [hidden]= "project.githublink === 'n/a'"><a target="_blank" href="{{project.githublink}}">Github Link</a></p>
+         <ul>
+            <li class="link-title">Link</li>
+            <li *ngFor="let link of project.links"><a target="_blank" href="https://{{link}}">{{link}}</a></li>
+         </ul>
+        <p class="github" [hidden]= "project.githublink === 'n/a'"><a class="bolden" target="_blank" href="{{project.githublink}}">Github Link</a></p>
+        <a class="bolden" routerLink="/projects/personal/{{project._id}}">More Info <i class="ion-chevron-right"></i></a>
     </div>
   </div>
 </div>

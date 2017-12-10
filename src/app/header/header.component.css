@@ -34,4 +34,12 @@ box-shadow: 0px 3px 12px -5px rgba(147,149,152, 1);}
   .hamburger {padding: 15px 0px 0px 0px;outline: none;cursor: pointer !important;}
   .menu-item {text-align: right;padding-bottom: 10px; padding-right: 13px;}
   .menu-item a {font-size:18px; }
+   .mobilenav {-webkit-box-shadow: 0px 3px 12px -5px rgba(147,149,152, 1);-moz-box-shadow: 0px 3px 12px -5px rgba(147,149,152, 1);
+box-shadow: 0px 3px 12px -5px rgba(147,149,152, 1);}
+}
+
+/*ipad*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+ .mobilenav {-webkit-box-shadow: 0px 3px 12px -5px rgba(147,149,152, 1);-moz-box-shadow: 0px 3px 12px -5px rgba(147,149,152, 1);
+box-shadow: 0px 3px 12px -5px rgba(147,149,152, 1);}
 }
