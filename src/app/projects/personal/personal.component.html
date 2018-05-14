@@ -6,6 +6,7 @@
       <p>These are various projects from code school and personal practice and learning. Some of them are incomplete, outdated or deprecated but I like keeping them up and seeing how far I've come and how much I've learned and improved over the last couple of years.</p>
     </div>
   </div>
+  <div class="loader" [hidden]="projects.length > 0"></div>
   <div class="project-container">
     <div class="project" *ngFor="let project of projects">
        <a routerLink="/projects/personal/{{project._id}}"><img src="{{project.display}}" alt=""></a>
@@ -16,7 +17,7 @@
         <p class="tech-info">{{project.technologies}}</p>
          <ul>
             <li class="link-title">Link</li>
-            <li *ngFor="let link of project.links"><a target="_blank" href="https://{{link}}">{{link}}</a></li>
+            <li *ngFor="let link of project.links"><a target="_blank" href="{{link}}">{{link}}</a></li>
          </ul>
         <p class="github" [hidden]= "project.githublink === 'n/a'"><a class="bolden" target="_blank" href="{{project.githublink}}">Github Link</a></p>
         <a class="bolden" routerLink="/projects/personal/{{project._id}}">More Info <i class="ion-chevron-right"></i></a>

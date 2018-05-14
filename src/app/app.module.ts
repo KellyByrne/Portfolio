@@ -25,6 +25,7 @@ import { ProjectsService } from './projects.service';
 import { EachPersonalComponent } from './projects/personal/each-personal/each-personal.component';
 import { PortfolioProgressComponent } from './portfolio-progress/portfolio-progress.component';
 import { BrandingComponent } from './branding/branding.component';
+import { ResumeComponent } from './resume/resume.component';
 
 const appRoutes : Routes = [
   {path: '', component: HomePageComponent, pathMatch: 'full' },
@@ -34,6 +35,7 @@ const appRoutes : Routes = [
   {path: 'projects/illustrator', component: IllustratorComponent},
   {path: 'portfolio-process', component: PortfolioProgressComponent},
   {path: 'branding', component: BrandingComponent},
+  {path: 'resume', component: ResumeComponent},
   { path: '**', redirectTo: ''}
 ];
 
@@ -59,7 +61,8 @@ const appRoutes : Routes = [
     IllustratorComponent,
     EachPersonalComponent,
     PortfolioProgressComponent,
-    BrandingComponent
+    BrandingComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,

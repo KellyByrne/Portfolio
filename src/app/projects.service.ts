@@ -8,7 +8,7 @@ export class ProjectsService {
   constructor(private http: Http) {}
  
   getProjects() {
-    return this.http.get('http://pacific-fortress-41036.herokuapp.com/api/projects')
+    return this.http.get('https://pacific-fortress-41036.herokuapp.com/api/projects')
       .map(
         (response: Response) => {
           const data = response.json();
@@ -24,7 +24,7 @@ export class ProjectsService {
   }
 
   getProject(id) {
-    return this.http.get('http://pacific-fortress-41036.herokuapp.com/api/projects/' + id)
+    return this.http.get('https://pacific-fortress-41036.herokuapp.com/api/projects/' + id)
       .map(
         (response: Response) => {
           const data = response.json();

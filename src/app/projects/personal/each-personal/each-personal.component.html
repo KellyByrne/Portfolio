@@ -1,4 +1,5 @@
 <app-header></app-header>
+<div class="loader" [hidden]="project != undefined"></div>
 <div class="project">
    <div class="row computer-image">
       <div class="columns large-12 medium-12 small-12">
@@ -18,12 +19,19 @@
               <p>{{project?.summary}}</p>
               <p class="tech">Technologies Used</p>
               <p class="tech-info">{{project?.technologies}}</p>
-              <!-- <ul>
-                <li class="link-title">Links</li>
-                <li *ngFor="let link of project.links"><a target="_blank" href="https://{{link}}">{{link}}</a></li>
-              </ul> -->
-              <p [hidden]= "project?.githublink === 'n/a'">Github Link: <a target="_blank" href="{{project?.githublink}}">{{project?.githublink}}</a></p>
+              <ul>
+                <li class="link-title">Link:</li>
+                <li *ngFor="let link of project?.links"><a target="_blank" href="{{link}}">{{link}}</a></li>
+              </ul>
+              <p class="github" [hidden]= "project?.githublink === 'n/a'">Github Link: <a target="_blank" href="{{project?.githublink}}">{{project?.githublink}}</a></p>
           </div>
+      </div>
+    </div>
+    <div class="extra" [hidden]= "project?.title != 'Africa Travel Project'">
+      <div class="row">
+        <h4>More Project Images</h4>
+        <div class="columns large-6 medium-6 small-12"><img src="{{project?.deskimg3}}" alt=""></div>
+        <div class="columns large-6 medium-6 small-12"><img src="{{project?.deskimg4}}" alt=""></div>
       </div>
     </div>
   </div>

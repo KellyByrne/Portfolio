@@ -1,4 +1,5 @@
 <app-header></app-header>
+<div class="loader" [hidden]="projects.length > 0"></div>
 <div class="project" *ngFor="let project of projects">
   <div class="info-content">
        <div class="row">

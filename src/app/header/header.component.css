@@ -1,4 +1,4 @@
-.row {max-width:80rem;}
+.row {max-width:100%;width:100%}
 .logo {height:175px;width:175px;margin-top:8px;z-index:1000;}
 .row .columns {display: flex;justify-content: space-between;align-items: center;height:168px;box-shadow: 0px 3px 12px -5px rgba(147,149,152, 1);}
 .menu-item {position:relative;}

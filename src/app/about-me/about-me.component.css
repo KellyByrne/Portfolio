@@ -5,7 +5,8 @@
 .half-box p {color:#424e4e;font-size:16px;text-transform:none;text-align:left;line-height:1.8;margin-bottom:0px;}
 .s-curve {padding-top: 50px; padding-bottom:50px}
 .img-box {height:350px;}
-.img-box img {height: 350px;width: 100%;}
+/*.img-box img {height: 350px;width: 100%;}*/
+.img-box img {height: 350px;width: 83%;margin: 0 auto;display: block;object-fit: cover;}
 .box-in-box {position:relative;}
 .desc-box {background-color:  #abc9bd;height: 260px;margin: 35px 45px 45px;}
 .outline-box {z-index:100;border:2px solid #677171;height: 260px;width:83%;left:75px;top:30px;position:absolute;}
@@ -28,4 +29,9 @@
 @media only screen and (min-width: 320px) and (max-width:1023px) and (orientation:landscape) {
   .outline-box {width:94%;height:255px;top:25px;}
   .text-box {left: 65px;}
+}
+
+/*ipad*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:portrait) {
+  .half-box p {font-size:15px;}
 }

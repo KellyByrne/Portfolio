@@ -1,0 +1,95 @@
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}*/
+
+
+/* HTML5 display-role reset for older browsers */
+/*article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {display: block;}*/
+body {line-height: 1;}
+hr {margin: .75rem auto !important;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+html {font-size: 0.75em;}
+body {background-color: white;font-family: 'Raleway', serif;font-weight: 400;line-height: 1.45;color: #11151C;}
+p {font-size: 12px;margin-bottom:0px;}
+h1, h2, h3, h4 {font-weight: inherit;line-height: 1;}
+.outer-links a {display: block;width: 250px;background-color: #88A097;color: #fff;text-align: center;border-radius: 8px;
+  font-family: 'Raleway', sans-serif;text-transform: uppercase;font-weight: bold;
+  letter-spacing: 1px;padding: 10px 0px 8px; margin:10px;
+  transition: background-color 0.2s ease-out;-webkit-transition: background-color 0.2s ease-out; }
+
+h1 {font-size: 6.998em;font-family: 'Raleway', sans-serif;font-weight: bolder;text-align: center;}
+h2 {font-size: 4.827em;}
+h3 {font-size: 1.999em;}
+h4 {font-size: 16px;font-weight: bold;font-family: 'Raleway', sans-serif;color: #88A097;text-align: center;}
+small, .font_small {font-size: 0.707em;}
+html, body {margin: 0;padding: 0;}
+.siteHeader {display: block;box-sizing: border-box;width: 100%;height: 780px;background-size: 100% 780px;}
+a {text-decoration: none;color:inherit;}
+a:hover {cursor:pointer;color: #88A097;}
+.headerFirstName {margin-top: 20px;font-size: 22px;margin-left: 150px;position: absolute;width: 300px;color: #88A097;}
+.headerLastName {font-size: 22px;margin-top:80px;margin-left: 250px;width: 450px;position: absolute;}
+.headerFullstack {margin-top: 130px;margin-left: 30px;font-size: 18px;width: 230px; position: absolute;}
+.navBar {margin-top: 0px;width: 100%;position: fixed;float: right;}
+.nav {margin-top: 30px;margin-bottom: 30px;float: right;font-size: 28px;margin-right: 30px;}
+.resume {display: block;box-sizing: border-box;width: 100%;height: 1100px;background-color:#514658;background-size: 100% 1100px;}
+.pdfHeader {text-align: center;width: 100%;}
+.firstName {margin-left: 123px;position: absolute;width: 170px;color: #88A097;z-index:10;}
+.tech {font-style:normal;padding:0 0 10px;}
+.tech strong, .link-list .li-title {color:#88A097;font-weight:800;font-style:normal;padding-left:0px;}
+.link-list li {padding-left:10px;}
+.lastName {margin-top:45px;margin-left: 280px;width: 250px;position: absolute;color:#424e4e;}
+.lastName h1 {font-size: 5.998em;}
+.contact {margin-left: 110px;position: absolute;margin-top: 68px;text-align: right;font-size: 8px;}
+.links {margin-left: 340px;position: absolute;margin-top: 8px;text-align: left;width: 300px;font-size: 8px;}
+.fullstack {font-size: 11px;}
+.workExperience {margin-top: 150px;width: 58%;height: 460px;float: left;}
+.work {font-style:normal;padding:5px 0 10px;}
+.topic, .comm {width: 100%;float: left;}
+.title {width: 49%;float: left;font-size: 14px;font-family: 'Raleway', sans-serif;margin: 0px;}
+.projectTitle {width: 100%;float: left;font-size: 14px;font-family: 'Raleway', sans-serif;}
+.projects{margin-top: 0px;width: 100%;float: left;}
+.community {margin-top:10px;width: 100%;float: left;} 
+.date {text-align: right;width: 49%;float: right;font-family: 'Raleway', sans-serif;font-size: 14px;}
+.description {width: 100%;font-style: italic;color: #535353;font-size: 12px;}
+.education {margin-top:10px;width: 100%;float: left;}
+.tools {margin-top: 50px;padding-left: 5px;width: 40%;float: right;height: 190px;}
+.languages {margin-top: 153px;width: 40%;float: right;height: 190px;}
+.tools p {padding-left: 0px}
+.languages p {padding-left: 0px}
+.currentlyLearning {margin-top: 17px;float: left;width:100%;}
+h4 i:before {font-size:20px;}
+h4 i.ion-code:before {font-size: 16px;}
+.lang {width: 60%;float: left;color: #535353;}
+.bubbles {width: 25%;float: right;}
+.grey {color: #535353;font-size: 11px;}
+.company {color: #535353;font-size: 13px;font-weight:bold;}
+.project {float: left;width: 100%;font-style: italic;color: #535353;}
+.projectDescription {color: #535353;padding-bottom:10px;}
+.education .description {padding-bottom:10px;}
+.progress {font-style: italic;}
+.pdf {background-color: white;margin: 50px auto;width: 700px;height: auto;overflow: hidden;margin-bottom: 40px;border: 1px solid rgba(0,0,0, .5);padding: 20px;padding-left: 40px;padding-right: 40px;box-shadow: 10px 10px 5px rgba(0,0,0, .5);}
+@media print {
+  a[href]:after {content: none !important;}
+}

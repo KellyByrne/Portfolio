@@ -14,6 +14,12 @@ a {color:#99B4AA;}
 .extra h4 {color:#88A097;text-transform:uppercase;text-align:left;padding-bottom:20px;}
 .extra img {border:1px solid #d3d3d3;margin-bottom: 20px;}
 .info-content h4 {font-size: 20px;font-weight: 500;color:#88A097;}
+.loader {border: 8px solid #f3f3f3;border-top: 8px solid #88A097;border-radius: 50%;width: 120px;height: 120px;animation: spin 2s linear infinite;margin: 50px auto;}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 @media only screen and (min-width: 320px) and (max-width:1023px) {
   .row.computer-image img {width: 85%;margin-top:50px;}
@@ -23,5 +29,5 @@ a {color:#99B4AA;}
 
 /*ipad*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:portrait)  {
-  .mobile-image {display:none;}
+  
 }

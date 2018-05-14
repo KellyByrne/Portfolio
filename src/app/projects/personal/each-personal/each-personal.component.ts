@@ -27,6 +27,5 @@ export class EachPersonalComponent implements OnInit {
           )
         }
       );
-
   }
 }
